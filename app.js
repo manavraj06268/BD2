@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 const ManavSelectorBtn = document.querySelector('#Manav-selector')
-const EvaSelectorBtn = document.querySelector('#Eva-selector')
+const youSelectorBtn = document.querySelector('#Eva-selector')
 const chatHeader = document.querySelector('.chat-header')
 const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
