@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 const ManavSelectorBtn = document.querySelector('#Manav-selector')
-const youSelectorBtn = document.querySelector('#Eva-selector')
+const youSelectorBtn = document.querySelector('#you-selector')
 const chatHeader = document.querySelector('.chat-header')
 const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
@@ -33,10 +33,10 @@ const updateMessageSender = (name) => {
 
   if (name === 'Manav') {
     ManavSelectorBtn.classList.add('active-person')
-    EvaSelectorBtn.classList.remove('active-person')
+    youSelectorBtn.classList.remove('active-person')
   }
-  if (name === 'Eva') {
-    EvaSelectorBtn.classList.add('active-person')
+  if (name === 'you') {
+    youSelectorBtn.classList.add('active-person')
     ManavSelectorBtn.classList.remove('active-person')
   }
 
@@ -45,7 +45,7 @@ const updateMessageSender = (name) => {
 }
 
 ManavSelectorBtn.onclick = () => updateMessageSender('Manav')
-EvaSelectorBtn.onclick = () => updateMessageSender('Eva')
+youSelectorBtn.onclick = () => updateMessageSender('you')
 
 const sendMessage = (e) => {
   e.preventDefault()
